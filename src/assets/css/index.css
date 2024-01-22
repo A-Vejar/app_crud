@@ -1,0 +1,59 @@
+:root {
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  /* Colores del sidebar */
+  --sidebar-menu-background-color: #C7B5A9;
+  --sidebar-menu-option-backgorund-color: #E7DFDA;
+  --sidebar-menu-option-text-color: #353535;
+  --sidebar-menu-option-hover-backgorund-color: #cee7f3;
+  --sidebar-menu-option-active-backgorund-color: #add7eb;
+  --sidebar-menu-option-disabled-backgorund-color: #c7dfeb;
+  --sidebar-menu-option-disabled-text-color: #636363;
+  /* ------------------- */
+}
+
+body {
+  margin: 0;
+  background-color: #d2dff7;
+  background-image: url(/layered_peaks_haikei.png);
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.permitir-saltos-linea {
+  white-space: pre-wrap;
+}
+
+.tooltip.show {
+  opacity: 1 !important;
+}
+
+/* #region Modificar el scroller del navegador */
+::-webkit-scrollbar {
+  width: 0.5rem;
+  height: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: transparent;
+  border-radius: 10px;
+  box-shadow: inset 0 0 10px 10px #888;
+  border: 2px transparent solid;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: transparent;
+  border-radius: 10px;
+  box-shadow: inset 0 0 10px 10px #555;
+  border: 2px transparent solid;
+}
+/* #endregion */

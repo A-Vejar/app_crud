@@ -1,0 +1,44 @@
+/* custom.scss */
+
+/* import the necessary Bootstrap files */
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+
+/* -------begin customization-------- */
+
+/* simply assign the value */
+$body-bg: #eeeeee;
+$min-contrast-ratio: 2.5;
+
+$primary: $primary;
+$secondary: $yellow-300;
+$success: $success;
+$info: $info;
+$warning: $warning;
+$danger: $danger;
+$light: $light;
+$dark: $dark;
+
+/* or, use an existing variable */
+$theme-colors: (
+  primary: $primary,
+  secondary: $secondary,
+  success: $success,
+  info: $info,
+  warning: $warning,
+  danger: $danger,
+  light: $light,
+  dark: $dark,
+);
+
+$custom-colors: (
+  tertiary: $orange,
+  "gray": $gray-300,
+  main: #6F5949,
+);
+
+$theme-colors: map-merge($theme-colors, $custom-colors);
+/* -------end customization-------- */
+
+/* finally, import Bootstrap to set the changes! */
+@import "bootstrap/scss/bootstrap";
